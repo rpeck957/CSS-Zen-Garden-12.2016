@@ -1,5 +1,5 @@
 * {
- margin:0;
+    margin:0;
     padding:0;
     box-sizing:border-box;
 }
@@ -13,7 +13,6 @@ h1,h2,h3 {
 /*HEADER*/
 
 header{
-    
     position: relative;
     height: 25em;
 }
@@ -22,7 +21,7 @@ header h1{
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: 2.5em;
-    background: rgba(7, 150, 150, 0.75);
+    background: rgba(7, 150, 150, 0.65);
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.03em;
@@ -36,6 +35,7 @@ header h1{
     position:absolute;
     z-index: 1;
     top:0.5em;
+    
 /*    margin:30px;*/
 /*    text-shadow: 1px 1px 1px rgba(255,255,255,0.5);*/
 }
@@ -70,16 +70,37 @@ header abbr{
     font-size: 1.25em;
 }
 
-body{
+body {
     background: center bottom url(desk.jpg) no-repeat;
-    background-size: cover;
+    background-size:cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
+a{
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(255,255,255,0.25);
+    font-size: 1em;
+}
+
+a:hover{
+    color: rgb(242, 214, 72);
+}
+
+a:active{
+    color: rgb(242, 214, 72);
+}
+
+
 .summary{
-    background: rgba(7, 150, 150, 0.75);
+    background: rgba(7, 150, 150, 0.65);
     position: relative;
 /*    margin: 30px;*/
     padding: 10px;
@@ -96,12 +117,12 @@ body{
     position:absolute;
     z-index: 1;
     top:21em;
-    
-/*    padding: .5em;*/
 }
 
 .summary p{
-    font-size: 1.25em; 
+    font-size: 1em;
+    padding: 0.01em;
+    margin-left: 0.25em;
     display: inline-block;
     color: #fff;
 }
@@ -109,14 +130,22 @@ body{
 .summary a{
     text-decoration: none;
     font-weight: 600;
-    color:rgb(6, 74, 74);
+    color:rgb(3, 39, 39);
     text-shadow: 0 0 1px rgba(255,255,255,0.25);
 }
 
+.summary a:hover{
+    color: rgb(242, 214, 72);
+}
+
+
+/*PREAMBLE*/
+
 .preamble{
     position: relative;
-     margin: 30px;
-   
+    top: 1.5em;
+    background:rgba(7, 150, 150, 0.65);
+    padding: .5em;
     
 }
 
@@ -125,7 +154,7 @@ body{
     font-style: normal;
     font-weight: 400;
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.75em;
     letter-spacing: 0.03em;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
     
@@ -133,6 +162,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.preamble p{
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    color: rgb(3, 39, 39);
+    margin: 1em;
+    
+}
+
+/*EXPLANATION*/
+
+.explanation{
+    position: relative;
+    top: 3em;
+    background:rgba(7, 150, 150, 0.65);
+    padding: .5em;
+    
 }
 
 .explanation h3{
@@ -140,7 +189,7 @@ body{
     font-style: normal;
     font-weight: 400;
     color: #fff;
-    font-size: 2.5em;
+    font-size: 2.75em;
     letter-spacing: 0.03em;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
     
@@ -150,31 +199,236 @@ body{
     align-items: center;
 }
 
+.explanation p{
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    color: rgb(3, 39, 39);
+    margin: 1em;
+}
+
+/*Participation*/
+
+.participation{
+    width: 49%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+    position: relative;
+    float: right;
+    
+    top: 4.5em;
+    background:rgba(7, 150, 150, 0.65);
+    padding: .5em;
+    margin-left:.5em;
+}
+
+.participation h3{
+    font-family: "memoriam-headline-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2.75em;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
+     width: 100%;
+    text-align: center;
+}
+
+.participation p{
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    color: rgb(3, 39, 39);
+    margin: 1em;
+}
+
+/*BENEFITS*/
+
+.benefits{
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: left;
+    margin-right:.5em;
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    
+    top: 4.5em;
+    background:rgba(7, 150, 150, 0.65);
+    padding: .5em;
+}
+
+.benefits h3{
+    font-family: "memoriam-headline-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2.75em;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
+    width: 100%;
+    text-align: center;
+}
+
+.benefits p{
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    color: rgb(3, 39, 39);
+    margin: 1em;
+}
+
+/*REQUIREMENTS*/
+
+.requirements{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+    position: relative;
+/*    float: right;*/
+    clear: both;
+    
+    top: 6em;
+    background:rgba(7, 150, 150, 0.65);
+    padding: .5em;
+    margin-top:.5em;
+    margin-bottom:.5em;
+}
+
+.requirements h3{
+     font-family: "memoriam-headline-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2.75em;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.requirements p{
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    color: rgb(3, 39, 39);
+    margin: 1em;
+}
+
 /*ASIDE*/
 
 aside{
-    position: absolute;
-    float: left;
-    background: rgba(7, 150, 150, 0.75);
-/*    width: 25%;*/
-    height: 100%;
-    top:30em;
-    bottom: 0;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    position: relative;
+    background: rgba(7, 150, 150, 0.65);
+    width: 100%;
+    top:4em;
+    padding: .5em;
+    margin-right: .5em;
     
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
+
+#design-selection{
+    position: relative;
+    text-align: center;
+    width: 49%;
+    height: 100%;
+    float: left;
+}
+
+#design-archives{
+    position: relative;
+    text-align: center;
+    width: 49%;
+    height: 25%;
+    float: right;
+}
+
+#zen-resources{
+    position: relative;
+    text-align: center;
+    width:49%;
+    height: 75%;
+    float: right;
+}
+
+
+aside .select{
+    color: #fff;
+    font-size: 1.75em;
+    letter-spacing: 0.03em;
+    
+    font-family: "memoriam-headline-pro",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.65); 
+}
+
+aside .archives{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
+}
+
+aside .resources{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.65);
+}
+
+aside ul li{
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    font-size: 1em;
+    color: rgb(3, 39, 39);
+    text-align: left;
+    padding: .01em;
+    list-style:circle #fff;
+    list-style-position: inside;
+/*    color: #fff;*/
+}
+
+
 
 /*FOOTER*/
 
 footer{
     background: rgba(7, 150, 150, 0.75);
+    position: relative;
+    bottom: -420px;
     width: 100%;
     height: 50px;
-/*    padding: 7px;*/
+    padding: .5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
 }
